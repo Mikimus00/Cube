@@ -3,6 +3,18 @@ package com.company;
 //радиус-вектор
 public class R3Vector {
     private double x, y, z;
+    public double getx()
+    {
+        return x;
+    }
+    public double gety()
+    {
+        return y;
+    }
+    public double getz()
+    {
+        return z;
+    }
     public R3Vector(double x, double y, double z){
         this.x = x;
         this.y = y;
@@ -21,7 +33,8 @@ public class R3Vector {
     public static R3Vector sum(R3Vector a, R3Vector b){
         return new R3Vector(a.x + b.x, a.y + b.y, a.z + b.z);
     }
-    public void scale(double k){
+
+        public void scale(double k){
         this.x *= k;
         this.y *= k;
         this.z *= k;
